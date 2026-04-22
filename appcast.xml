@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  BermudaPay Sparkle appcast.
+
+  The app (via SUFeedURL in Info.plist) fetches this file via:
+    https://raw.githubusercontent.com/jbatten0/BermudaPay-releases/main/appcast.xml
+
+  Each <item> describes a release; Sparkle compares the app's CFBundleVersion
+  (sparkle:version) against the items and offers an update if a newer one
+  is available.
+
+  Release script (Scripts/release.sh in the main BermudaPay repo) appends
+  a new <item> here with the signed archive URL, size, and EdDSA signature.
+-->
+<rss version="2.0"
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>BermudaPay</title>
+        <link>https://raw.githubusercontent.com/jbatten0/BermudaPay-releases/main/appcast.xml</link>
+        <description>Updates for BermudaPay.</description>
+        <language>en</language>
+    </channel>
+</rss>
