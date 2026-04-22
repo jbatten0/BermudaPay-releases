@@ -20,20 +20,5 @@
         <link>https://raw.githubusercontent.com/jbatten0/BermudaPay-releases/main/appcast.xml</link>
         <description>Updates for BermudaPay.</description>
         <language>en</language>
-        <item>
-            <title>Version 1.0.3</title>
-            <pubDate>Wed, 22 Apr 2026 16:59:11 +0000</pubDate>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-                <ul><li>See <a href="https://github.com/jbatten0/BermudaPay">source repo</a> for the changelog.</li></ul>
-            ]]></description>
-            <enclosure
-                url="https://github.com/jbatten0/BermudaPay-releases/releases/download/v1.0.3/BermudaPay-1.0.3.zip"
-                sparkle:version="14"
-                sparkle:shortVersionString="1.0.3"
-                sparkle:edSignature="ycI5EFEPHw1XUX5Ov7vvaan23OuBkuniSBo9feYfDQDVHwye7UYvmkCGrDL75tx+f7dktTshV0BM9lSv38EhAA=="
-                length="2095261"
-                type="application/octet-stream" />
-        </item>
     </channel>
 </rss>
