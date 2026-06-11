@@ -35,5 +35,33 @@
                 length="2097101"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>Version 1.1.0</title>
+            <pubDate>Thu, 11 Jun 2026 13:47:58 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                ## BermudaPay 1.1.0
+
+### New features
+
+- **Flexible pay frequencies** — weekly, bi-weekly, semi-monthly, or monthly pay periods. The tax annualization follows the matching official OTC calculator variant (52/26/24/12 periods per year), configurable in Settings → Employee → Pay Schedule.
+- **Annual salary support** — a rate change can now switch an employee to an annual salary. Salary accrues per period and is prorated by calendar day across a mid-period switch from hourly, so a change taking effect mid-period produces a correct split payslip.
+- **Actual payments & reconciliation** — record the amount actually transferred for each period on the payslip. The new reconciliation panel (shown on the latest payslip) compares, per fiscal year, the payroll tax due under the official formula against what was actually withheld, plus recorded transfers against computed net pay, and suggests a single correction to apply to the next payment as an adjustment line.
+- **Per-fiscal-year tax rules** — tax configurations are now effective-dated. Each period is taxed under the rules in force on its end date, so historical fiscal years keep their own bands when rates change in April. Existing databases migrate automatically: prior bands are preserved for historical dates and the official FY26-27 bands apply from 1 April 2026.
+- **Adjustments** — payslips can carry non-taxed corrections (positive or negative) with full visibility in the payslip view, PDF export, and CSV export.
+
+### Improvements
+
+- PDF payslips show salary and adjustment lines; CSV export gains Salary Pay, Adjustments, and Actual Paid columns.
+- New periods start the day after the previous period ends, supporting variable-length (monthly/semi-monthly) cadences.
+            ]]></description>
+            <enclosure
+                url="https://github.com/jbatten0/BermudaPay-releases/releases/download/v1.1.0/BermudaPay-1.1.0.zip"
+                sparkle:version="18"
+                sparkle:shortVersionString="1.1.0"
+                sparkle:edSignature="Tist4mOc8iW8SsnESQ6zZPkz7y70D/UATMvMryLQv8NcDFoFcmhgli5z1KbKWii1Tc3AOrz4cJSnco0ffWawBw=="
+                length="2207781"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
