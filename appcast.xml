@@ -63,5 +63,24 @@
                 length="2207781"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>Version 1.1.1</title>
+            <pubDate>Thu, 11 Jun 2026 14:05:06 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                ## BermudaPay 1.1.1
+
+### Bug fixes
+
+- Fixed a crash when switching a rate entry's compensation type from Hourly to Annual Salary in Settings → Rates.
+            ]]></description>
+            <enclosure
+                url="https://github.com/jbatten0/BermudaPay-releases/releases/download/v1.1.1/BermudaPay-1.1.1.zip"
+                sparkle:version="20"
+                sparkle:shortVersionString="1.1.1"
+                sparkle:edSignature="4haC6cI3sP85FtwLbo19Jq2imKE6W5OxOykNHAkcvpp8gm6UQjZUqT5QJO288Fh1QptbMmYw8OUlKI8H0GkYCg=="
+                length="2207718"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
