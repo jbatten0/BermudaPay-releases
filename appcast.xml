@@ -139,5 +139,24 @@
                 length="2345982"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>Version 1.2.2</title>
+            <pubDate>Fri, 12 Jun 2026 01:19:13 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                ## BermudaPay 1.2.2
+
+### Bug fix
+
+- **Insurance proration no longer loses a day across a mid-period rate change.** Rate entries whose effective date was created with an earlier version's date picker could carry a hidden time-of-day, causing the segment day-counter to prorate a 14-day period as 13/14ths — understating social and health insurance on the period straddling the change (e.g. SI $69.92 instead of $75.30). Day counting is now calendar-day based, segment boundaries snap to midnight, and the rate editor normalizes effective dates on save. Affected periods recompute correctly after updating; locked tax amounts are unchanged.
+            ]]></description>
+            <enclosure
+                url="https://github.com/jbatten0/BermudaPay-releases/releases/download/v1.2.2/BermudaPay-1.2.2.zip"
+                sparkle:version="27"
+                sparkle:shortVersionString="1.2.2"
+                sparkle:edSignature="Qv0SXQbfNI3N2YHyttGXks/Iz6taY/TfZ3G5P2hivBQptEW2dn/DLsEfpUqjjcqzaMADxo2ja30qNC1sqHufDQ=="
+                length="2346688"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
