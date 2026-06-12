@@ -82,5 +82,37 @@
                 length="2207718"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>Version 1.2.0</title>
+            <pubDate>Fri, 12 Jun 2026 00:18:53 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                ## BermudaPay 1.2.0
+
+### New features
+
+- **Quarterly Tax Returns (PR1)** — the app now auto-completes the quarterly payroll-tax filing figures. Open **File → Quarterly Tax Returns…** (⌘⇧T) to pick any fiscal quarter and see, computed straight from your recorded periods: gross taxable remuneration paid in the quarter (grouped by pay date, matching the official basis), the employee portion actually withheld, the employer portion at your configured rate, the total payable, the filing due date, and the band table mirroring the official OTC calculator's Quarter Output (PR1) schedule — including the above-cap count. Export a worksheet PDF to transfer onto the E-Tax submission.
+- An optional **Payroll Tax Account No.** field in Settings → Employee is printed on the worksheet.
+
+### Correctness & data safety
+
+- **Periods per year is now tracked per fiscal year.** Setting 27 (bi-weekly) or 53 (weekly) for a year with an extra pay day no longer recomputes prior years' salary accrual, tax, or reconciliation — earlier years are pinned automatically, visible and editable in Settings → Pay Schedule.
+- Tax-rule effective dates are timezone-proof: configurations entered as "1 April" take effect 1 April regardless of local time, and historical payslips display their own year's rates.
+- An unreadable database file can no longer be silently overwritten: the app explains the problem, keeps a rolling backup alongside the data file, and recovery via File → Import preserves that backup.
+- Year-to-date figures now mean the same thing everywhere (fiscal-year-to-date) across the payslip, PDF, sidebar, and CSV export.
+- The PR1 band table classifies zero-earnings quarters correctly, payslip PDFs paginate instead of overflowing, batch exports keep every page, withheld tax locks only once a period's pay day has passed, and the reconciliation correction can't be applied to an already-paid period.
+
+### Design refresh
+
+- Paid / variance / finalized badges on payslips and sidebar rows, a segmented Payslip ⇄ Timesheet switcher, clearer reconciliation states (green when settled; red = employee owes, orange = employee is owed), modern grouped Settings, and tidier editors throughout.
+            ]]></description>
+            <enclosure
+                url="https://github.com/jbatten0/BermudaPay-releases/releases/download/v1.2.0/BermudaPay-1.2.0.zip"
+                sparkle:version="23"
+                sparkle:shortVersionString="1.2.0"
+                sparkle:edSignature="RyeeHLl6a0FR05xISknOels5PePDNWbBmwAqbJ+4ICKGj9oeru6bb6aLPcncBnnOLgLW8QbdaJmdTOXfzp6JCw=="
+                length="2337495"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
