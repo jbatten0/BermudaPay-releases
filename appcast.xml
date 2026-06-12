@@ -114,5 +114,30 @@
                 length="2337495"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>Version 1.2.1</title>
+            <pubDate>Fri, 12 Jun 2026 00:49:22 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                ## BermudaPay 1.2.1
+
+### New feature
+
+- **Overtime for salaried employees.** A salaried rate entry now carries an hourly overtime rate (Settings → Rates). Hours beyond the daily overtime threshold **or** beyond the new weekly threshold (Settings → Employee → Work Pattern, default 45 hours) are paid at that rate on top of the salary — whichever rule yields more each week, so a sixth working day counts even when no single day runs long, with no double counting. Overtime appears on the payslip, PDF, and CSV as before and is taxed as recurring earnings.
+- The timesheet summary now shows paid Regular/OT hours straight from the calculation engine (matching the payslip exactly, including weekly overtime) alongside total recorded hours.
+
+### Notes
+
+- Hourly employees are unaffected: their overtime remains hours beyond the daily threshold, exactly as before — historical payslips do not change.
+- After updating, check the overtime rate on your salaried rate entry (Settings → Rates): it carries over the rate from the prior hourly entry until you set the new one.
+            ]]></description>
+            <enclosure
+                url="https://github.com/jbatten0/BermudaPay-releases/releases/download/v1.2.1/BermudaPay-1.2.1.zip"
+                sparkle:version="25"
+                sparkle:shortVersionString="1.2.1"
+                sparkle:edSignature="c3mm82Q0rjnIASKm5MYLX3VcshC0JVa+inZ+T+wq5Na+88X1w3bjNm3pdAZWYqFj+ZAk+riK7YGWjb7wTwqkDg=="
+                length="2345982"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
