@@ -158,5 +158,25 @@
                 length="2346688"
                 type="application/octet-stream" />
         </item>
+        <item>
+            <title>Version 1.2.3</title>
+            <pubDate>Fri, 17 Jul 2026 20:35:56 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+<li>FY26-27 employer payroll tax rate halved from 1% to 0.5%, per the Payroll Tax Amendment and Validation Act 2026 (small employers with annual payroll under $200,000, Class B(f)). Employee bands are unchanged.</li>
+<li>New databases and newly added tax configurations now default to the 0.5% employer rate.</li>
+<li>Existing data: open Settings &rarr; Tax and change the employer rate on the configuration effective 1 April 2026 from 1% to 0.5%. (The data file is shared via iCloud, so this only needs doing once.)</li>
+<li>Quarterly returns test coverage for the new employer rate.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/jbatten0/BermudaPay-releases/releases/download/v1.2.3/BermudaPay-1.2.3.zip"
+                sparkle:version="29"
+                sparkle:shortVersionString="1.2.3"
+                sparkle:edSignature="WbZh2JvX/B+SkyHL5JpAK0OfMtRUzNx9QgPWzMyKKoTMNmoKQKhv5zUkaDy7TxqlV2hNwX7bt88PPDzCcdHHDA=="
+                length="2346618"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
